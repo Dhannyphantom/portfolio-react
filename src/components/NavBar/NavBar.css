@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-links > p {
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0px 25px;
+}
+
+.nav-links > p:hover {
+  color: #33a9ff;
+}
