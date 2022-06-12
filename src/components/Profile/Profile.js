@@ -7,17 +7,22 @@ const leftExperienceArr = [
   {
     id: nanoid(),
     title: "biography",
-    content: "Some text",
+    list: false,
+    content:
+      "A software developer who is very passionate about programming and tech in general",
   },
   {
     id: nanoid(),
     title: "contact",
-    content: "Some text",
+    list: false,
+    content: `Kogi, Nigeria. dhannnyphantom@gmail.com. +234 708 171 3909`,
   },
   {
     id: nanoid(),
     title: "services",
-    content: "Some text",
+    list: true,
+    content:
+      "Mobile App Development. Backend development. Web Development. Blockchain development. UI/UX Designer",
   },
 ];
 const rightExperienceArr = [
