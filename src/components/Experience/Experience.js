@@ -4,17 +4,11 @@ export default function Experience({ item }) {
   return (
     <div className="experience">
       <h6 className={isRight ? "right" : "left"}>{item.title}</h6>
-      {item.list ? (
-        <ul>
-          {item.content.split(". ").map((str) => (
-            <li className="left-text"> {str} </li>
-          ))}
-        </ul>
-      ) : (
-        <p className={isRight ? "right right-text" : "left-text"}>
-          {item.content}
-        </p>
-      )}
+
+      {item.content.split(". ").map((str) => (
+        <p className={isRight ? "right right-text" : "left-text"}>{str}</p>
+        // <li className="left-text"> {str} </li>
+      ))}
     </div>
   );
 }

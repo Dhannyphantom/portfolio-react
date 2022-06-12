@@ -15,7 +15,7 @@ const leftExperienceArr = [
     id: nanoid(),
     title: "contact",
     list: false,
-    content: `Kogi, Nigeria. dhannnyphantom@gmail.com. +234 708 171 3909`,
+    content: `Kogi, Nigeria. olojodhanny@gmail.com. +234 708 171 3909`,
   },
   {
     id: nanoid(),
