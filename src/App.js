@@ -6,6 +6,11 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <h2 className="title">
+        Olojo Daniel <br /> Software Developer & UI/UX Designer <br /> Based in
+        Nigeria
+      </h2>
+
       <Profile />
     </div>
   );
