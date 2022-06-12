@@ -3,7 +3,7 @@ export default function Experience({ item }) {
   const isRight = item.direction === "right";
   return (
     <div className="experience">
-      <h6 className={isRight ? "right" : ""}>{item.title}</h6>
+      <h6 className={isRight ? "right" : "left"}>{item.title}</h6>
       {item.list ? (
         <ul>
           {item.content.split(". ").map((str) => (
