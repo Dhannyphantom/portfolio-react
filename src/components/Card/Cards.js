@@ -2,12 +2,12 @@ import "./Cards.css";
 
 const Card = () => {
   return (
-    <div>
-      <div>
+    <div className="card-container">
+      <div className="card">
         <p>Image</p>
         <p>60%</p>
       </div>
-      <p>React Native</p>
+      <p className="card-name">React Native</p>
     </div>
   );
 };

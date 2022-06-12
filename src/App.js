@@ -2,6 +2,7 @@ import "./App.css";
 import Cards from "./components/Card/Cards";
 import NavBar from "./components/NavBar/NavBar";
 import Profile from "./components/Profile/Profile";
+import Title from "./components/Title/Title";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         Nigeria
       </h2>
       <Profile />
-      <h2 className="title">My Skills and Tech</h2>
+      <Title title="My Skills and Tech" />
       <Cards />
     </div>
   );

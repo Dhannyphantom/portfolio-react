@@ -1,0 +1,17 @@
+.card-container {
+  width: 180px;
+  font-size: 0.8rem;
+}
+
+.card {
+  background-color: #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.card-name {
+  text-align: center;
+  margin-top: 10px;
+}
