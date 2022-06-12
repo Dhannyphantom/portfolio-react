@@ -19,7 +19,7 @@
 
 .border {
   border: 1px solid #dfdfdf;
-  width: 320px;
+  min-width: 320px;
   border-radius: 160px;
   height: 440px;
   display: flex;
