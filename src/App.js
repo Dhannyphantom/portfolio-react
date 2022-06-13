@@ -2,6 +2,7 @@ import "./App.css";
 import Cards from "./components/Card/Cards";
 import NavBar from "./components/NavBar/NavBar";
 import Profile from "./components/Profile/Profile";
+import Separator from "./components/Separator/Separator";
 import Title from "./components/Title/Title";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Profile />
       <Title title="Skills and Usage" />
       <Cards />
+      <Separator />
     </div>
   );
 }
