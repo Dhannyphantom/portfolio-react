@@ -1,13 +1,15 @@
 import "./Cards.css";
 
+const cardsArr = [];
+
 const Card = () => {
   return (
     <div className="card-container">
       <div className="card">
-        <p>Image</p>
+        <img src={require("../../assets/skills/js.png")} />
         <p>60%</p>
       </div>
-      <p className="card-name">React Native</p>
+      <p className="card-name">Javascript</p>
     </div>
   );
 };
