@@ -9,7 +9,7 @@ const leftExperienceArr = [
     title: "biography",
     list: false,
     content:
-      "A software developer who is very passionate about programming and tech in general",
+      "A self taught software developer who is very passionate about programming and tech in general",
   },
   {
     id: nanoid(),

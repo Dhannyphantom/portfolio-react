@@ -2,6 +2,7 @@ import "./History.css";
 import { nanoid } from "nanoid";
 import Experience from "../Experience/Experience";
 import Title from "../Title/Title";
+import Separator from "../Separator/Separator";
 
 const leftPane = [
   {
@@ -88,6 +89,7 @@ export default function History() {
         <div>{midElements}</div>
         <div>{rightElements}</div>
       </div>
+      <Separator />
     </section>
   );
 }

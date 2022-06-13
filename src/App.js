@@ -1,4 +1,5 @@
 import "./App.css";
+import AppProject from "./components/AppProject/AppProject";
 import Cards from "./components/Card/Cards";
 import History from "./components/History/History";
 import NavBar from "./components/NavBar/NavBar";
@@ -17,6 +18,7 @@ function App() {
       <Cards />
       <Separator />
       <History />
+      <AppProject />
     </div>
   );
 }
