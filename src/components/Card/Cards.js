@@ -74,6 +74,18 @@ const cardsArr = [
     image: require("../../assets/skills/react.png"),
     score: 80,
   },
+  {
+    id: nanoid(),
+    name: "HTML",
+    image: require("../../assets/skills/html.png"),
+    score: 65,
+  },
+  {
+    id: nanoid(),
+    name: "CSS",
+    image: require("../../assets/skills/css.png"),
+    score: 66,
+  },
 ];
 
 const sortCards = () => {
