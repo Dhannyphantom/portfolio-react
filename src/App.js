@@ -1,9 +1,9 @@
 import "./App.css";
 import Cards from "./components/Card/Cards";
+import History from "./components/History/History";
 import NavBar from "./components/NavBar/NavBar";
 import Profile from "./components/Profile/Profile";
 import Separator from "./components/Separator/Separator";
-import Title from "./components/Title/Title";
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
         Nigeria
       </h2>
       <Profile />
-      <Title title="Skills and Usage" />
       <Cards />
       <Separator />
+      <History />
     </div>
   );
 }

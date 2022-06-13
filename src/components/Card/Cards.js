@@ -1,5 +1,6 @@
 import "./Cards.css";
 import { nanoid } from "nanoid";
+import Title from "../Title/Title";
 
 const cardsArr = [
   {
@@ -108,5 +109,10 @@ export default function Cards() {
   sortCards();
 
   const cardElements = cardsArr.map((obj) => <Card item={obj} key={obj.id} />);
-  return <section className="cards-container">{cardElements}</section>;
+  return (
+    <section>
+      <Title title="Skills and Usage" />
+      <div className="cards-container">{cardElements}</div>
+    </section>
+  );
 }
