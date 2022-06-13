@@ -1,23 +1,100 @@
 import "./Cards.css";
+import { nanoid } from "nanoid";
 
-const cardsArr = [];
+const cardsArr = [
+  {
+    id: nanoid(),
+    name: "Javascript",
+    image: require("../../assets/skills/js.png"),
+    score: 96,
+  },
+  {
+    id: nanoid(),
+    name: "React Native",
+    image: require("../../assets/skills/rnative.png"),
+    score: 92,
+  },
+  {
+    id: nanoid(),
+    name: "Nodejs",
+    image: require("../../assets/skills/nodejs.png"),
+    score: 90,
+  },
+  {
+    id: nanoid(),
+    name: "Git",
+    image: require("../../assets/skills/git-icon.png"),
+    score: 95,
+  },
+  {
+    id: nanoid(),
+    name: "GitHub",
+    image: require("../../assets/skills/github.png"),
+    score: 94,
+  },
+  {
+    id: nanoid(),
+    name: "Java",
+    image: require("../../assets/skills/java.png"),
+    score: 20,
+  },
+  {
+    id: nanoid(),
+    name: "Python",
+    image: require("../../assets/skills/python.png"),
+    score: 32,
+  },
+  {
+    id: nanoid(),
+    name: "Solidity",
+    image: require("../../assets/skills/solidity.png"),
+    score: 30,
+  },
+  {
+    id: nanoid(),
+    name: "Web3",
+    image: require("../../assets/skills/eth.png"),
+    score: 29,
+  },
+  {
+    id: nanoid(),
+    name: "MongoDB",
+    image: require("../../assets/skills/mongodb.png"),
+    score: 70,
+  },
+  {
+    id: nanoid(),
+    name: "Express",
+    image: require("../../assets/skills/express.png"),
+    score: 69,
+  },
+  {
+    id: nanoid(),
+    name: "React",
+    image: require("../../assets/skills/react.png"),
+    score: 80,
+  },
+];
 
-const Card = () => {
+const sortCards = () => {
+  cardsArr.sort((a, b) => b.score - a.score);
+};
+
+const Card = ({ item }) => {
   return (
     <div className="card-container">
       <div className="card">
-        <img src={require("../../assets/skills/js.png")} />
-        <p>60%</p>
+        <img src={item.image} alt="" />
+        <p>{item.score}%</p>
       </div>
-      <p className="card-name">Javascript</p>
+      <p className="card-name">{item.name}</p>
     </div>
   );
 };
 
 export default function Cards() {
-  return (
-    <section>
-      <Card />
-    </section>
-  );
+  sortCards();
+
+  const cardElements = cardsArr.map((obj) => <Card item={obj} key={obj.id} />);
+  return <section className="cards-container">{cardElements}</section>;
 }

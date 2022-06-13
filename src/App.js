@@ -13,7 +13,7 @@ function App() {
         Nigeria
       </h2>
       <Profile />
-      <Title title="My Skills and Tech" />
+      <Title title="Skills and Usage" />
       <Cards />
     </div>
   );
